@@ -1,0 +1,221 @@
+1-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 01 - Faça um Programa que peça dois números e imprima o maior deles.
+
+valor1 = int(input("Insira o prinmeiro número: "))
+valor2 = int(input("Insira o segundo número: "))
+
+if valor1 > valor2:
+ print("O maior número é %d" %valor1)
+elif valor1 == valor2:
+ print("Os valores se equivalem")
+else: print("O maior número é %d" %valor2)
+
+
+2-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 02 - Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+valor = int(input("Insira seu número: "))
+
+if valor > 0:
+    print("O número é positivo")
+elif valor == 0:
+    print("O número é neutro")
+else: print("O número é negativo")
+
+
+3-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 03 - Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+
+genero = str(input("Qual é o seu gênero?(F para Feminino e M para masculino): "))
+
+if genero == "F":
+    print("Seu gênero é feminino!")
+elif genero == "M":
+    print("Seu gênero é masculino!")
+else: print("Gênero inválido")
+
+
+4-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 04 - Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+
+letra = input("Insira uma letra: ")
+
+if letra == "a":
+	print ("Essa letra é uma vogal!")
+elif letra == "e":
+	print ("Essa letra é uma vogal!")
+elif letra == "i":
+	print ("Essa letra é uma vogal!")
+elif letra == "o":
+	print ("Essa letra é uma vogal!")
+elif letra == "u":
+	print ("Essa letra é uma vogal!")
+else: print ("Essa letra é uma consoante!")
+
+
+5-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 05 - Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+# - A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+# - A mensagem "Reprovado", se a média for menor do que sete;
+# - A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+media1 = float(input("Insira sua primeira nota: "))
+media2 = float(input("Insira sua segunda nota: "))
+
+mediaf = (media1 + media2)/2
+
+if mediaf == 10:
+	print("Aprovado com Distinção!")
+elif mediaf >= 7:
+	print("Aprovado!")
+elif mediaf <=6.9:
+	print("Reprovado!")
+
+
+6-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 06 - Faça um Programa que leia três números e mostre o maior deles.
+
+numero1 = int(input("Insira seu primeiro número: "))
+numero2 = int(input("Insira seu segundo número: "))
+numero3 = int(input("Insira seu terceiro número: "))
+
+if numero1 > numero2 > numero3:
+	print("O maior número é %d" % numero1)
+elif numero1 > numero3 > numero2:
+	print("O maior número é %d" % numero1)
+elif numero2 > numero1 > numero3:
+	print("O maior número é %d" % numero2)
+elif numero2 > numero3 > numero1:
+	print("O maior número é %d" % numero2)
+elif numero3 > numero1 > numero2:
+	print("O maior número é %d" % numero3)
+elif numero3 > numero2 > numero1:
+	print("O maior número é %d" % numero3)
+
+
+7-
+
+
+# Jonathas Henryck Queiroz Carneiro 
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 07 - Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+numero1 = int(input("Insira seu primeiro número: "))
+numero2 = int(input("Insira seu segundo número: "))
+numero3 = int(input("Insira seu terceiro número: "))
+
+if numero1 > numero2 > numero3:
+	print("O maior número é %d" % numero1)
+	print("O menor número é %d" % numero3)
+elif numero1 > numero3 > numero2:
+	print("O maior número é %d" % numero1)
+	print("O menor número é %d" % numero2)
+elif numero2 > numero1 > numero3:
+	print("O maior número é %d" % numero2)
+	print("O menor número é %d" % numero3)
+elif numero2 > numero3 > numero1:
+	print("O maior número é %d" % numero2)
+	print("O menor número é %d" % numero1)
+elif numero3 > numero1 > numero2:
+	print("O maior número é %d" % numero3)
+	print("O menor número é %d" % numeor2)
+elif numero3 > numero2 > numero1:
+	print("O maior número é %d" % numero3)
+	print("O menor número é %d" % numero1)
+
+
+8-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 08 - Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
+produto1 = float(input("Informe o valor do primeiro produto: "))
+produto2 = float(input("Informe o valor do segundo produto: "))
+produto3 = float(input("Informe o valor do terceiro produto: "))
+
+if produto1 < produto2 and produto1 < produto3:
+        print("O produto 1 é o mais barato!")
+elif produto2 < produto1 and produto2 < produto3:
+        print("Produto 2 é o mais barato!")
+elif produto3 < produto2 and produto3 < produto1:
+        print("Produto 3 é o mais barato!")
+
+
+9-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 09 - Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+numero1 = int(input("Insira o primeiro número: "))
+numero2 = int(input("Insira o segundo número: "))
+numero3 = int(input("Insira o terceiro número: "))
+
+if numero3 < numero2 < numero1:
+    print(numero3, numero2, numero1)
+elif numero3 < numero1 < numero2:
+    print(numero3, numero1, numero2)
+elif numero2 < numero3 < numero1:
+    print(numero2, numero3, numero1)
+elif numero2 < numero1 < numero3:
+    print(numero2, n3, numero1)
+elif numero1 < numero2 < numero3:
+    print(numero1, numero2, numero3)
+elif numero1 < numero3 < numero2:
+    print(numero1, numero3, numero2)
+
+
+10-
+
+
+# Jonathas Henryck Queiroz Carneiro
+# UNIFIP - Patos
+# 24 de abril de 2020
+# Questão 10 - Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+turno_estudo = input("Qual é o turno que você estuda?(M-Matutino, V-Vespertino e N-Noturno) ")
+
+if turno_estudo == "M":
+	print("Bom dia!")
+elif turno_estudo == "V":
+	print("Boa tarde!")
+elif turno_estudo == "N":
+	print("Boa noite!")
+else:
+	print("Valor inválido")
